@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/all.css">
+    <title>ROTATING</title>
+</head>
+<body>
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Basketball</h1>
+            <small>Game for all</small>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione necessitatibus assumenda magni ut earum reprehenderit, nesciunt suscipit impedit voluptates tenetur ad voluptatem culpa soluta repellendus expedita obcaecati sunt autem saepe minus? Nemo fuga nam ducimus dignissimos, sed eligendi nesciunt amet perferendis aspernatur aut nisi distinctio voluptate minus enim, deleniti dicta, dolores illo. Consectetur mollitia sequi nostrum neque quas ratione explicabo aut beatae. Aliquid quae minus non tempore magnam ratione voluptas laborum ut soluta placeat molestias itaque, maiores nam. Vel necessitatibus dignissimos, adipisci ipsum omnis mollitia id nobis esse qui fugit, exercitationem odit. Expedita rem quasi quas vel quod, dicta eaque?</p>
+            <h3>My Hobbie</h3>
+            <img src="3.png" alt="" srcset="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, repellat delectus nisi praesentium saepe quia consectetur quaerat aperiam facere cumque modi aliquam non! Quam molestiae tempora sint, ad quaerat quia? Atque, adipisci nam. Laudantium commodi iusto ab ipsam velit debitis voluptate quis porro error labore. Consectetur ab minus vero quae consequatur at quidem, amet tenetur ex quas, ipsam nemo numquam ut soluta iure quasi eius sequi odio, velit porro dignissimos fugiat? Odit ad debitis consequatur.</p>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><i class="fas fa-home">  Home</i></li>
+            <li><i class="fas fa-user-alt">   About</i></li>
+            <li><i class="fas fa-envelope">  Contact</i><li>
+        </ul>
+    </nav>
+
+
+    <!-- <script src="https://kit.fontawesome.com/6e4d9b580c.js" crossorigin="anonymous"></script> -->
+    <script>
+        const open = document.getElementById('open')
+        const close = document.getElementById('close')
+        const container = document.querySelector('.container')
+
+        open.addEventListener('click', () =>{
+            container.classList.add('show-nav')
+        })
+        close.addEventListener('click', () =>{
+            container.classList.remove('show-nav')
+        })
+    </script>
+</body>
+</html>
